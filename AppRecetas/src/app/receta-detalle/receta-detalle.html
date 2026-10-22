@@ -1,0 +1,11 @@
+@if (receta) {
+  <div class="card" style="width: 100%;">
+    <img [src]="'/' + receta.image" class="card-img-top" [alt]="receta.nombre">
+    <div class="card-body">
+      <h3 class="card-title">{{ receta.nombre }}</h3>
+      <p class="card-text">{{ receta.descripcion }}</p>
+    </div>
+  </div>
+} @else {
+  <div class="alert alert-info">Por favor, selecciona una receta de la lista.</div>
+}

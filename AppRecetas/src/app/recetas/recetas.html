@@ -1,0 +1,16 @@
+<div class="container mt-4">
+  <div class="row">
+
+    <div class="col-5">
+      <app-receta-lista 
+        [listaRecetas]="recetas" 
+        (recetaSeleccionadaEmiter)="onRecetaElegida($event)">
+      </app-receta-lista>
+    </div>
+    
+  
+    <div class="col-7">
+      <app-receta-detalle [receta]="recetaSeleccionada"></app-receta-detalle>
+    </div>
+  </div>
+</div>
